@@ -35,7 +35,8 @@ jobs:
             options: --user root -v ${{ github.workspace }}:/tmp
             shell: bash
             run: |
-                jupyter-nbconvert --to notebook --ExecutePreprocessor.kernel_name=python3 --inplace --execute ${{steps.config_file.outputs.prop}}
+                v=$(jupyter kernelspec list | awk '{print $1}' | egrep r)
+                jupyter-nbconvert --to notebook --ExecutePreprocessor.kernel_name="$v" --inplace --execute ${{steps.config_file.outputs.prop}}
                 cp ${{steps.config_file.outputs.prop}}  /tmp
       - name: Commit
         run: |
