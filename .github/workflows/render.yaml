@@ -31,7 +31,7 @@ jobs:
       - name: Run the build process with Docker
         uses: addnab/docker-run-action@v3
         with:
-            image: quay.io/environmental_ds_book/test2i2c:latest
+            image: quay.io/environmental_ds_book/test2i2c_r:latest
             options: --user root -v ${{ github.workspace }}:/tmp
             shell: bash
             run: |
