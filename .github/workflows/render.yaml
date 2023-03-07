@@ -11,6 +11,8 @@ jobs:
   build:
     name: ${{ matrix.os }}
     runs-on: ${{ matrix.os }}
+
+    if: github.repository_owner == 'Environmental-DS-Book'
     strategy:
       fail-fast: false
       matrix:
@@ -20,22 +22,36 @@ jobs:
         shell: bash -l {0}
     steps:
       - uses: actions/checkout@v2
-        # Set notebook anme
+      # Set notebook name
       - name: Get properties from the config file
         id: config_file
         uses: notiz-dev/github-action-json-property@release
         with: 
           path: 'config.json'
           prop_path: 'notebook_name'
+      # Set quay image
+      - name: Get properties from the config file
+        id: config_quay
+        uses: notiz-dev/github-action-json-property@release
+        with:
+          path: 'config.json'
+          prop_path: 'quay_image'
+      # Set kernel name
+      - name: Get properties from the config file
+        id: config_kernel
+        uses: notiz-dev/github-action-json-property@release
+        with:
+          path: 'config.json'
+          prop_path: 'kernel'
       # Render the notebook
       - name: Run the build process with Docker
         uses: addnab/docker-run-action@v3
         with:
-            image: quay.io/environmental_ds_book/test2i2c_r:latest
+            image: quay.io/${{steps.config_quay.outputs.prop}}:latest
             options: --user root -v ${{ github.workspace }}:/tmp
             shell: bash
             run: |
-                v=$(jupyter kernelspec list | awk '{print $1}' | egrep r)
+                v=$(jupyter kernelspec list | awk '{print $1}' | egrep ${{steps.config_kernel.outputs.prop}})
                 jupyter-nbconvert --to notebook --ExecutePreprocessor.kernel_name="$v" --inplace --execute ${{steps.config_file.outputs.prop}}
                 cp ${{steps.config_file.outputs.prop}}  /tmp
       - name: Commit
