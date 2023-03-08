@@ -1,5 +1,5 @@
 {
-    "notebook_name": "index.ipynb",
-    "kernel": "",
+    "notebook_name": "template.ipynb",
+    "kernel": "r",
     "quay_image": ""
 }
