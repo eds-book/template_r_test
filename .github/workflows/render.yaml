@@ -27,21 +27,21 @@ jobs:
         id: config_file
         uses: notiz-dev/github-action-json-property@release
         with: 
-          path: 'config.json'
+          path: '.github/config.json'
           prop_path: 'notebook_name'
       # Set quay image
       - name: Get properties from the config file
         id: config_quay
         uses: notiz-dev/github-action-json-property@release
         with:
-          path: 'config.json'
+          path: '.github/config.json'
           prop_path: 'quay_image'
       # Set kernel name
       - name: Get properties from the config file
         id: config_kernel
         uses: notiz-dev/github-action-json-property@release
         with:
-          path: 'config.json'
+          path: '.github/config.json'
           prop_path: 'kernel'
       # Render the notebook
       - name: Run the build process with Docker

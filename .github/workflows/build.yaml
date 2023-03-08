@@ -27,7 +27,7 @@ jobs:
       id: config_quay
       uses: notiz-dev/github-action-json-property@release
       with:
-        path: 'config.json'
+        path: '.github/config.json'
         prop_path: 'quay_image'
 
     - name: Build and push the image to quay.io
