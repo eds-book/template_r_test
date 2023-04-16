@@ -82,7 +82,7 @@ When the first draft of the notebook is ready and reproducible in Binder, please
 ### :point_right: Step 7 - Reviewing process
 EiC will open a PRE-REVIEW issue where a handling editor and authors suggest reviewers. The editor can give initial directions to authors for improving the notebook, especially if the notebook lacks some requested sections. Once reviewers agreed on the revision, EiC opens a REVIEW issue.
 
-We suggest to read further details of the REVIEW process in the publishing guidelines (see [here](https://github.com/alan-turing-institute/environmental-ds-book/edit/master/book/publishing/guidelines/guidelines-authors.md)). 
+We suggest to read further details of the REVIEW process in the publishing guidelines (see [here](https://github.com/alan-turing-institute/environmental-ds-book/blob/master/book/publishing/guidelines/guidelines-authors.md)). 
 
 ## Credits
 This template uses [2i2c’s hub-user-image-template](https://github.com/2i2c-org/hub-user-image-template) released under BSD-3-Clause license. We also acknowledge the [static-export-template](https://github.com/JuliaPluto/static-export-template) of Julia Pluto, in particular the well-documented README file.
