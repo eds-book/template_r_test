@@ -68,18 +68,9 @@ After EiC’s approval of the draft version of the notebook, you transfer the no
 
 EiC will assist you to prepare the notebook repository for the review process.
 
-### :point_right: Step 6 - Transfer 
+### :point_right: Step 6 - Reviewing process
+When the first draft of the notebook is ready and reproducible in Binder, EiC will fork the notebook repository to the [eds-book-gallery organisation](https://github.com/eds-book-gallery).
 
-When the first draft of the notebook is ready and reproducible in Binder, please transfer to the eds-book-gallery organisation. 
-* Go to settings
-* Click on Transfer 
-* Type `eds-book-gallery` in the organisation name
-* Type the name of your repository to confirm
-* Click in I understand, transfer this repository
-
-<img src=".github/img/step6.png" width="755" />
-
-### :point_right: Step 7 - Reviewing process
 EiC will open a PRE-REVIEW issue where a handling editor and authors suggest reviewers. The editor can give initial directions to authors for improving the notebook, especially if the notebook lacks some requested sections. Once reviewers agreed on the revision, EiC opens a REVIEW issue.
 
 We suggest to read further details of the REVIEW process in the publishing guidelines (see [here](https://github.com/alan-turing-institute/environmental-ds-book/blob/master/book/publishing/guidelines/guidelines-authors.md)). 
