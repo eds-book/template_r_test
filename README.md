@@ -64,13 +64,11 @@ To start adding the notebook dependencies, you must update the `install.R` file.
 
 When the minimal working version of the notebook is ready, you should tag Editors-in-Chief (EiC) in the PR with the latest Binder badge. EiC will check how reproducible is the notebook and its feasibility for the reviewing stage.
 
-After EiC’s approval of the draft version of the notebook, you transfer the notebook repository to the eds-book-gallery organisation. 
+After EiC’s approval of the draft version of the notebook, EiC will fork the notebook repository to the [eds-book-gallery organisation](https://github.com/eds-book-gallery).
 
-EiC will assist you to prepare the notebook repository for the review process.
+EiC will prepare the notebook in the forked repository for the review process.
 
 ### :point_right: Step 6 - Reviewing process
-When the first draft of the notebook is ready and reproducible in Binder, EiC will fork the notebook repository to the [eds-book-gallery organisation](https://github.com/eds-book-gallery).
-
 EiC will open a PRE-REVIEW issue where a handling editor and authors suggest reviewers. The editor can give initial directions to authors for improving the notebook, especially if the notebook lacks some requested sections. Once reviewers agreed on the revision, EiC opens a REVIEW issue.
 
 We suggest to read further details of the REVIEW process in the publishing guidelines (see [here](https://github.com/alan-turing-institute/environmental-ds-book/blob/master/book/publishing/guidelines/guidelines-authors.md)). 
