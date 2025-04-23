@@ -1,0 +1,47 @@
+# See docs at: https://mystmd.org/guide/frontmatter
+version: 1
+extends:
+  - https://raw.githubusercontent.com/eds-book/edsbook-config/main/edsbook.yml
+project:
+  id: bc66f1c7-5de3-4e8f-99f0-4e104207599e
+  title: R template published in the Environmental Data Science book
+  short_title: R Template
+  abstract: Notebook developed to demonstrate R template.
+  # keywords: []
+  authors:
+    - id: acoca
+      name: Alejandro Coca-Castro
+      orcid: 0000-0002-9264-1539
+      url: https://github.com/acocac
+      roles:
+        - Writing – review & editing
+      affiliations:
+        - turing
+  editors:
+    - acoca
+  affiliations:
+    - id: turing
+      name: The Alan Turing Institute
+      department: Environment & Sustainability
+  github: https://github.com/eds-book/template_r_test
+  subject: Template
+  keywords:
+    - Template
+    - Standard
+    - R
+  venue:
+    title: Environmental Data Science Book
+    short_title: EDS Book
+    url: https://www.edsbook.org
+  jupyter:
+    binder:
+      repo: eds-book/template_r_test
+  open_access: true
+  license:
+    content: CC-BY-4.0
+    code: MIT
+  date: 2023-09-01
+  toc:
+    - file: notebook.ipynb
+site:
+  template: book-theme
