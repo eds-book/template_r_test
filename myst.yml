@@ -36,6 +36,7 @@ project:
   jupyter:
     binder:
       repo: eds-book/template_r_test
+    kernelName: R
   open_access: true
   license:
     content: CC-BY-4.0
